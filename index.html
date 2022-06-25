@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <title>Trending Movies</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nourhan Mansour" />
+    <meta name="description" content="Trending movies" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html,css,js,ajax,weather" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="my-5">
+
+    <section id="search" class=" mt-5">
+        <div class="container">
+            <div class="row w-90 m-auto">
+                <div class="col-md-6">
+                    <div>
+                        <input id="searchByword" type="search" class="p-2 text-white border-bottom bg-transparent w-100 border-end-0 text-center" placeholder="get movies by word...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <input id="searchLetters" type="search" class="p-2 text-white  border-bottom bg-transparent w-100 border-end-0  text-center" placeholder="search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <section id="sideNavbar">
+        <div id="navLinks">
+            <div class=" d-flex flex-column justify-content-between h-100  bg-black   text-white py-3">
+                <div>
+                    <ul>
+                        <li id="now_playing">Now Playing</li>
+                        <li id="popular">Popular</li>
+                        <li id="top_rated">Top Rated</li>
+                        <li id="trending">Trending</li>
+                        <li id="upcoming"> Upcoming</li>
+                        <li id="contactUs"> Contact Us</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="socialMedia ms-4 ">
+                        <i class="fa-brands fa-facebook-f me-2"></i>
+                        <i class="fa-brands fa-twitter me-2 "></i>
+                        <i class="fa-brands fa-google-plus-g me-2"></i>
+                    </div>
+
+                    <p class="lead ms-4"> Copyright Â© 2019 All Rights Reserved.</p>
+
+                </div>
+
+            </div>
+
+            <div id="ocordion" class=" d-flex justify-content-between align-items-center flex-column py-3 px-2">
+                <div class="logoContainer text-center">
+                    <img src="images//logo.png" alt="logo">
+                </div>
+
+                <div>
+                    <i id="closeIcon" class="fa fa-align-justify fa-times fa-2x "></i>
+                    <i id="openNav" class="fa-solid fa-bars fa-2x "></i>
+                </div>
+
+                <div class="d-flex flex-column ">
+                    <i class="fas fa-share-alt mb-2"></i>
+                    <i class="fas fa-globe"></i>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="display" class="mt-5">
+        <div class="container">
+            <div id="data" class="row w-90 m-auto">
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="container">
+
+            <div class="row w-90 m-auto">
+                <h3 class="my-5 text-white">Contact US...</h3>
+                <div class="col-md-6">
+                    <div>
+                        <input id="userName" type="text" class="p-2 text-white border-bottom bg-transparent w-100 border-end-0 text-center mb-3" placeholder="Enter Your Name ">
+                    </div>
+                    <div id="alertName" class="d-none alert alert-danger p-2">
+                        <p>your name is not valid</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <input id="email" type="email" class="p-2 text-white  border-bottom bg-transparent w-100 border-end-0  text-center mb-3" placeholder="Enter Email">
+                    </div>
+                    <div id="alertEmail" class="d-none alert alert-danger p-2">
+                        <p>your email is not valid</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <input id="phone" type="number" class="p-2 text-white  border-bottom bg-transparent w-100 border-end-0  text-center mb-3" placeholder="Enter Phone">
+                    </div>
+                    <div id="alertPhone" class="d-none alert alert-danger p-2">
+                        <p>Enter valid phone number..</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <input id="age" type="number" class="p-2 text-white  border-bottom bg-transparent w-100 border-end-0  text-center mb-3" placeholder="Enter Age">
+                    </div>
+                    <div id="alertAge" class="d-none alert alert-danger p-2">
+                        <p>your Age must be more than 18....</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <input id="password" type="password" class="p-2 text-white  border-bottom bg-transparent w-100 border-end-0  text-center mb-3" placeholder="Enter Password">
+                    </div>
+                    <div id="alertPassword" class="d-none alert alert-danger p-2">
+                        <p>Your Password should start with capital letter.. </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <input id="repassword" type="password" class="p-2 text-white  border-bottom bg-transparent w-100 border-end-0  text-center mb-3" placeholder="Renter Password">
+                    </div>
+
+                </div>
+                <button id="submitBtn" disabled class="btn btn-outline-danger w-10 m-auto py-2  ">Submit</button>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
